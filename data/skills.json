@@ -1,0 +1,40 @@
+[
+    {
+        "tittle":"JavaScript",
+        "porcent":40
+    },
+    {
+        "tittle":"HTML - CSS",
+        "porcent":75
+    },
+    {
+        "tittle":"Flutter",
+        "porcent":50
+    },
+    {
+        "tittle":"Dart",
+        "porcent":50
+    },
+    {
+        "tittle":"React",
+        "porcent":30
+    },
+    {
+        "tittle":"C#",
+        "porcent":60
+    },
+    {
+        "tittle":"C++",
+        "porcent":50
+    },
+    {
+        "tittle":"Microsoft SQL Server",
+        "porcent":60
+    },
+    {
+        "tittle":"Bash Script",
+        "porcent":50
+    }
+
+    
+]

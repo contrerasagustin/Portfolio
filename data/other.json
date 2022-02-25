@@ -1,0 +1,23 @@
+[
+    {
+        "type":"l",
+        "name":"Español",
+        "desc":"Lenguaje nativo"
+    },
+    {
+        "type":"l",
+        "name":"Ingles",
+        "desc":"Nivel Intermedio - Comprencion de texto - Conversaciones sencillas"
+    },
+    {
+        "type":"t",
+        "name":"Trello",
+        "desc":"Experiencia Intermedia"
+    },
+    {
+        "type":"t",
+        "name":"Git",
+        "desc":"Experiencia Intermedia - Commit de archivos - Trabajar con distintas branches"
+    }
+
+]

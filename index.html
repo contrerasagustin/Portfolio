@@ -1,0 +1,120 @@
+<!-- https://preview.colorlib.com/#ronaldo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <title>Portfolio Personal</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <a class="linksPages" href="#header">HOME</a>
+            <a class="linksPages" href="#divAbout">SOBRE MI</a>
+            <a class="linksPages" href="#divResume">CURRICULUM</a>
+            <a class="linksPages" href="#divProjects">PROYECTOS</a>
+            <a class="linksPages" href="#divContact">CONTACTO</a>
+        </nav>
+        <div id="divHome">
+            <div id="divHi">
+                <h4>Portfolio personal de</h4>
+                <h2 class="name"></h2>
+                <h4>Developer</h4>
+            </div>
+            <button id="btnMore" class="linksPages" href="#divAbout">
+                <h6>▼</h6>
+            </button>
+        </div>
+    </header>
+    <div id="divAbout" class="columnas">
+        <div class="filas">
+            <img class="photo"src="img/perfil.png" alt="imagen personal">
+            <div id="divInfo" class="columnas data">
+                <h2>Sobre Mi</h2>
+                <p id="information"></p>
+                <ul>
+                    <li><span class="data">Nombre: </span><span class="name"></span></li>
+                    <li><span class="data">Fecha de Nacimiento:</span> <span id="dob"></span></li>
+                    <li><span class="data">Direccion:</span> <span id="address"></span></li>
+                    <li><span class="data">E-mail:</span> <span id="email"></span></li>
+                    <li><span class="data">Telefono:</span> <span id="phone"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div id="divResume" class="filas">
+        <nav class="columnas">
+            <a class="linksPages" href="#divEducation">Educacion</a>
+            <a class="linksPages" href="#divExperience">Experiencia</a>
+            <a class="linksPages" href="#divSkills">Conocimientos</a>
+            <a class="linksPages" href="#divOthers">Herramientas e Idiomas</a>
+        </nav>
+        <div id="categories" class="columnas">
+            <div id="divEducation">
+                <h3 class ="subtittle">Educacion</h3>
+                <ul id ="ulEducation"></ul>
+            </div>
+            <div id="divExperience">
+                <h3 class ="subtittle">Experiencia</h3>
+                <ul id="ulExperience"></ul>
+            </div>
+            <div id="divSkills">
+                <h3 class ="subtittle">Conocimientos</h3>
+                <div id="allSkills"></div>
+            </div>
+            <div id="divOthers">
+                <div >
+                    <h3 class ="subtittle">Herramientas</h3>
+                    <ul id="ulTools"></ul>
+                </div>
+                <div>
+                    <h3 class ="subtittle">Idiomas</h3>
+                    <ul id="ulLanguages"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="divContact" class="columnas">
+    <h2>Redes y Contacto</h2>
+    <p></p>
+    <div id="contacts">
+        <div>
+            <img class="imgContact" src="/img/mailv2.png" alt="">
+            <h4>E-Mail</h4>
+        </div>
+        <div>
+            <img class="imgContact" src="/img/phonev2.png" alt="">
+            <h4>Telefono</h4>
+        </div>
+        <div>
+            <img class="imgContact" src="/img/linkedinv2.png" alt="">
+            <h4>LinkedIn</h4>
+        </div>
+        <div>
+            <img class="imgContact" src="/img/githubv2.png" alt="">
+            <h4>Git</h4>
+        </div>
+    </div>
+</div>
+    <script src="js/index.js"></script>
+</body>
+<footer>
+    <div>
+        <ul>
+            <li><a class="linksPages" href="#header">Home</a></li>
+            <li><a class="linksPages" href="#divAbout">Sobre mi</a></li>
+            <li><a class="linksPages" href="#divResume">Curriculum</a></li>
+            <li><a class="linksPages" href="#divProjects">Proyectos</a></li>
+            <li><a class="linksPages" href="#divContact">Contacto</a></li>
+        </ul>
+    </div>
+    <ul>
+        <p>Pagina creada por Agustin Contreras | Copyright ©2022 Todos los derechos reservados .</p>
+    </ul>
+</footer>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "anio":"Marzo del 2018 - Marzo del 2021",
+        "work":"Sysadmin",
+        "place":"Instituto Tecnico Industrial San Judas Tadeo",
+        "description":"Me encargaba de la supervicion y mantenimiento de dos servidores. Uno utilizaba Windows SERVER 2012 con un sistema de dominios en ActiveDiretory y un servidor DNS. El segundo con Linux CentOS donde se encontraba un servidor DHCP, un PROXY y un server FTP."
+    },
+    {
+        "anio":"Marzo del 2020 - ACTUALIDAD",
+        "work":"Profesor",
+        "place":"Instituto Tecnico Industrial San Judas Tadeo",
+        "description":"Profesor de programacion en lenguajes como C++ y C#. Profesor de programacion WEB con HTML, CSS y JS. Profesor de Hardware. Profesor de Seguridad Informatica. Profesor en Sistemas Operativos, especificamente en el area de Linux y BASH."
+    },
+    {
+        "anio":"Mayo de 2020 - Marzo de 2021",
+        "work":"Mobile Developer con Flutter 2 y Dart",
+        "place":"Freelance",
+        "description":"Las areas de las cuales me encargaba eran: La creacion de un login/singup de una aplicacion mobile con validacion en una base de datos firebase, donde los usuarios podian crear sus propias cuentas o utilizar la cuenta de google/facebook. Trabaje con la api de google maps, toda la parte de places y routes, para trazar rutas en una aplicacion de pedidos. Tambien la utilizacion e instalacion de paquetes provenientes de pup.dev. Todo esto con la utilizacion bloc y cubit para el manejo de estados."
+    }
+]
