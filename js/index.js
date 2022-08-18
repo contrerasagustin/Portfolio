@@ -53,17 +53,45 @@ function loadContacts(){
             let contact = document.querySelector("#contacts");
             contact.style.height="auto";
             let divs = document.querySelector("#contacts").children;
-            divs[0].style.backgroundColor="green";
-            divs[0].style.height="auto";
-            divs[0].appendChild(p[0]);
-            divs[1].appendChild(p[1]);
-            divs[1].style.height="auto";
-            divs[2].appendChild(a[0]);
-            divs[2].style.height="auto";
-            a[0].appendChild(p[2])
-            //divs[3].appendChild(a[1]);
-            a[1].appendChild(p[3])
+            
+            //divs[0].style.backgroundColor="red";
+            //divs[1].style.backgroundColor="red";
+            //divs[2].style.backgroundColor="red";
 
+            divs[0].style.cursor="pointer";
+            divs[0].addEventListener("click",()=>{
+                window.location.href="mailto:"+d.email+"?Subject=Busqueda%20laboral";
+            });
+            divs[1].style.cursor="pointer";
+            divs[1].addEventListener("click",()=>{
+                window.location.href=d.linkLinkedin;
+            });
+            divs[2].style.cursor="pointer";
+            divs[2].addEventListener("click",()=>{
+                window.location.href=d.linkGit;
+            });
+            divs[0].style.padding="10px";
+            divs[0].style.height="200px";
+            divs[0].style.width="200px";
+            divs[1].style.padding="10px";
+            divs[1].style.height="200px";
+            divs[1].style.width="200px";
+            divs[2].style.padding="10px";
+            divs[2].style.height="200px";
+            divs[2].style.width="200px";
+            
+
+
+            //divs[0].appendChild(p[0]);
+            //divs[1].appendChild(a[1]);
+            //divs[2].appendChild(a[0]);
+
+            a[0].appendChild(p[2])
+            a[1].appendChild(p[1]);
+            //divs[3].appendChild(a[1]);
+            
+            
+            
 
         });
     })
