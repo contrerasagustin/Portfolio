@@ -21,7 +21,7 @@ function clickHandler(e){
 
 //Cargar datos
 function loadProfile(){
-    fetch('/data/profile.json')
+    fetch('../data/profile.json')
     .then(resp => resp.json())
     .then(data =>{
         data.forEach(d => {
@@ -31,30 +31,37 @@ function loadProfile(){
             document.querySelector("#dob").textContent=d.dob;
             document.querySelector("#address").textContent=d.address;
             document.querySelector("#email").textContent=d.email;
-            document.querySelector("#phone").textContent=d.phone;
+            //document.querySelector("#phone").textContent=d.phone;
         });
     });
 }
 
 function loadContacts(){
-    fetch('/data/contact.json')
+    fetch('../data/contact.json')
     .then(resp => resp.json())
     .then(data =>{
         data.forEach(d => {
-            let p = [document.createElement("p"),document.createElement("p"),document.createElement("p"),document.createElement("p")];
+            let p = [document.createElement("p"),document.createElement("p"),
+                    document.createElement("p"),document.createElement("p")];
             let a = [document.createElement("a"),document.createElement("a")];
             p[0].textContent=d.email;
-            p[1].textContent=d.phone;
-            p[2].textContent=d.ussLinkedin;
-            p[3].textContent=d.ussGit;
-            a[1].href=d.linkGit;
-            a[0].href=d.linkLinkedin;
+            //p[1].textContent=d.phone;
+            p[1].textContent=d.ussLinkedin;
+            p[2].textContent=d.ussGit;
+            a[0].href=d.linkGit;
+            a[1].href=d.linkLinkedin;
+            let contact = document.querySelector("#contacts");
+            contact.style.height="auto";
             let divs = document.querySelector("#contacts").children;
+            divs[0].style.backgroundColor="green";
+            divs[0].style.height="auto";
             divs[0].appendChild(p[0]);
             divs[1].appendChild(p[1]);
+            divs[1].style.height="auto";
             divs[2].appendChild(a[0]);
+            divs[2].style.height="auto";
             a[0].appendChild(p[2])
-            divs[3].appendChild(a[1]);
+            //divs[3].appendChild(a[1]);
             a[1].appendChild(p[3])
 
 
@@ -63,7 +70,7 @@ function loadContacts(){
 }
 
 function loadEducation(){
-    fetch('/data/education.json')
+    fetch('../data/education.json')
     .then(resp => resp.json())
     .then(data =>{
         data.forEach(d => {
@@ -86,7 +93,7 @@ function loadEducation(){
 }
 
 function loadExperience(){
-    fetch('/data/experience.json')
+    fetch('../data/experience.json')
     .then(resp => resp.json())
     .then(data =>{
         data.forEach(d => {
@@ -109,7 +116,7 @@ function loadExperience(){
 }
 
 function loadSkills(){
-    fetch('/data/skills.json')
+    fetch('../data/skills.json')
     .then(resp => resp.json())
     .then(data =>{
         data.forEach(d => {
@@ -138,7 +145,7 @@ function loadSkills(){
 }
 
 function loadOthers(){
-    fetch('/data/other.json')
+    fetch('../data/other.json')
     .then(resp => resp.json())
     .then(data =>{
         data.forEach(d => {
