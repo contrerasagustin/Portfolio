@@ -1,8 +1,8 @@
 :root{
-    --color-primario:  #1A374D;
-    --color-secundario:  #406882;
-    --color-terciario:  #6998AB;
-    --color-cuaternario:  #B1D0E0;
+    --color-primario:  #2E4C6D;
+    --color-secundario:  #DADDFC;
+    --color-terciario:  #396EB0;
+    --color-cuaternario:  #FC997C;
     --color-texto: white;
 }
 
@@ -71,8 +71,6 @@ a{
     color: var(--color-cuaternario);
     /* font-size: 30px; */
 }
-
-
 
 .data{
     font-weight: 600;
@@ -175,17 +173,67 @@ a{
     margin: 0px;
     font-weight: bold;
     font-size: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-delay: 30s;
+    /* animation-name: typewriter;
+    animation-duration: 3s;
+    animation */
+    /* animation: typewriter 3s steps(20) infinite alternate,blink 50ms steps(20) infinite normal; */
+    /* border-right: 2px solid var(--color-cuaternario); */
+}
+
+@keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 105%;
+    }
+}
+
+@keyframes blink {
+    from {
+      border-color: var(--color-cuaternario);
+    }
+    to {
+      border-color: transparent;
+    }
 }
 
 #btnMore{
+    display: flex;
+    align-items: end;
+    justify-content: center;
     color: var(--color-cuaternario);
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     border-style: none;
-    background: linear-gradient(to top right, var(--color-primario), var(--color-terciario));
-    height: 50px;
-    width: 50px;
+    background: transparent;
+    height: 200px;
+    width: 100px;
     cursor: pointer;
 }
+
+#arrow{
+    position: relative;
+    -webkit-animation-name: rebote; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+    animation-name: rebote;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+}
+
+@keyframes rebote {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:0px;}
+    50%  {left:0px; top:-100px;}
+    75%  {left:0px; top:-100px;}
+    100% {left:0px; top:0px;}
+  }
 
 #btnMore h6{
     margin: 0;
@@ -329,6 +377,7 @@ a{
 
 #divContact h2{
     font-size: 50px;
+    color: var(--color-primario); ;
 }
 
 #contacts{
@@ -351,7 +400,7 @@ a{
 }
 
 #contacts h4{
-    color: var(--color-secundario);
+    color: var(--color-primario);
     font-size: 25px;
 }
 
@@ -369,7 +418,7 @@ a{
  
 #ulTools h4{
     font-weight: bold;
-    color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 
 #ulTools p{
@@ -386,7 +435,7 @@ a{
  
 #ulLanguages h4{
     font-weight: bold;
-    color: var(--color-secundario);
+    color: var(--color-terciario);
 }
 
 #ulLanguages p{
