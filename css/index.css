@@ -203,37 +203,23 @@ a{
 
 #btnMore{
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     color: var(--color-cuaternario);
     /* transform: rotate(45deg); */
     border-style: none;
     background: transparent;
-    height: 200px;
+    height: 100px;
     width: 100px;
     cursor: pointer;
 }
 
 #arrow{
-    position: relative;
-    -webkit-animation-name: rebote; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
-    -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
-    animation-name: rebote;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-timing-function: ease-out;
+
+    top: 50%;
+    left: 50%;
 }
 
-@keyframes rebote {
-    0%   {left:0px; top:0px;}
-    25%  {left:0px; top:0px;}
-    50%  {left:0px; top:-100px;}
-    75%  {left:0px; top:-100px;}
-    100% {left:0px; top:0px;}
-  }
 
 #btnMore h6{
     margin: 0;

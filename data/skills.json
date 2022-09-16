@@ -1,39 +1,48 @@
 [
     {
         "tittle":"JavaScript",
-        "porcent":40
+        "anios":1,
+        "text" :"1 año"
     },
     {
         "tittle":"HTML - CSS",
-        "porcent":75
+        "anios":2,
+        "text" :"2 años"
     },
     {
         "tittle":"Flutter",
-        "porcent":50
+        "anios":1,
+        "text" :"1 año"
     },
     {
         "tittle":"Dart",
-        "porcent":50
-    },
-    {
-        "tittle":"React",
-        "porcent":30
+        "anios":1,
+        "text" :"1 año"
     },
     {
         "tittle":"C#",
-        "porcent":60
+        "anios":1,
+        "text" :"1 año"
     },
     {
-        "tittle":"C++",
-        "porcent":50
+        "tittle":"C/C++",
+        "anios":2,
+        "text" :"2 años"
     },
     {
-        "tittle":"Microsoft SQL Server",
-        "porcent":60
+        "tittle":"MSSQL",
+        "anios":3,
+        "text" :"3 años"
     },
     {
         "tittle":"Bash Script",
-        "porcent":50
+        "anios":2,
+        "text" :"2 años"
+    },
+    {
+        "tittle":"Linux",
+        "anios":3,
+        "text" :"3 años"
     }
 
     

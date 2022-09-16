@@ -196,7 +196,7 @@ function loadSkills() {
                 const h4 = document.createElement("h4");
                 let divTotal = document.createElement("div");
                 let divProgress = document.createElement("div");
-                p.textContent = d.porcent + "%";
+                p.textContent = d.text + " de experiencia";
                 h4.textContent = d.tittle;
                 divDatos.appendChild(h4);
                 divDatos.appendChild(p);
@@ -204,7 +204,7 @@ function loadSkills() {
                 divTotal.setAttribute("class", "divTotal");
                 divProgress.setAttribute("class", "divProgress");
                 divTotal.style.width = "40ch";
-                divProgress.style.width = ((d.porcent * 40) / 100) + "ch";
+                divProgress.style.width = ((d.anios * 40) / 5) + "ch";
                 div.appendChild(divDatos);
                 divTotal.appendChild(divProgress);
                 div.appendChild(divTotal);
